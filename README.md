@@ -17,17 +17,12 @@ It is designed as a **data extraction + candidate generation pipeline**:
 2. Are certain concepts/categories **systematically more divergent** across languages?
 3. Do those divergences correlate with **potential bias indicators** (framing, omissions, emphasis, or lexical cues) in one language more than the other?
 
-### What this notebook *does* vs *does not* do
-✅ **Does**
+### What this notebook does
 - Pull EN pages from Wikipedia for your keyword list
 - Map each EN page to a ZH counterpart (when available)
 - Extract plain text summaries/content via the MediaWiki API
 - Compute multilingual embedding similarity
 - Output **ranked mismatch candidates** and per-page similarity summaries
-
-⚠️ **Does not (by itself)**
-- Prove “bias” automatically (bias assessment typically needs annotation, theory-driven metrics, or downstream models)
-- Guarantee perfect sentence alignment (it uses semantic nearest-neighbor matching, not true translation alignment)
 
 ---
 
